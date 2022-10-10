@@ -1,0 +1,73 @@
+.mainContainer{
+    margin:auto;
+}
+
+
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+        margin-bottom: 0;
+        border-radius: 0;
+      }
+      
+      /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+      /* .row.content {height: 450px} */
+      .row.content {height:auto;} 
+      .row.content {min-height:500px;} 
+      /* Set gray background color and 100% height */
+      .sidenav {
+        padding-top: 20px;
+        background-color: #f1f1f1;
+        min-height: 85vh;
+        height: 100%;
+      }
+      
+      /* Set black background color, white text and some padding */
+      footer {
+        background-color: #555;
+        color: white;
+        padding: 15px;
+      }
+      
+      /* On small screens, set height to 'auto' for sidenav and grid */
+      @media screen and (max-width: 767px) {
+        .sidenav {
+          height: auto;
+          min-height: 0;
+          padding: 15px;
+        }
+        /* .row.content {min-height:auto;}  */
+      }
+
+      .background-image{
+        background-image: url(https://img.freepik.com/premium-photo/digital-technology-network-data-communication-concept-abstract-background-earth-element-furnished-by-nasa_24070-630.jpg?w=2000);
+        background-size:cover;
+
+        height: 40vh;
+      }
+
+      .main-title{
+        color: white;
+        font-size: 8vw;
+        margin: auto;
+        vertical-align: middle;
+        text-shadow: 2px 2px 2px #000000;
+      }
+      .flex-center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+      .text-white{
+        color:white;
+      }
+      .height85{
+        min-height: 85vh;
+      }
+      .no-padding {
+        padding: 0 !important;
+      }
+      .no-margin{
+        margin: 0 !important;
+      }
+      
