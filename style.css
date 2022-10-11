@@ -43,13 +43,19 @@
         background-image: url(https://img.freepik.com/premium-photo/digital-technology-network-data-communication-concept-abstract-background-earth-element-furnished-by-nasa_24070-630.jpg?w=2000);
         background-size:cover;
 
-        height: 40vh;
       }
-
+      .intro{
+        color: white;
+        text-align: justify;
+        background-color: rgba(0, 0, 0, 0.526);
+        padding: 2rem 2rem;
+        margin-bottom: 3rem;
+        border-radius: 1rem;
+      }
       .main-title{
         color: white;
         font-size: xx-large;
-        margin: auto;
+        margin: 2rem auto;
         vertical-align: middle;
         text-shadow: 2px 2px 2px #000000;
       }
