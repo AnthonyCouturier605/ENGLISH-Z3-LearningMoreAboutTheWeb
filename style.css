@@ -19,6 +19,7 @@
         background-color: #f1f1f1;
         min-height: 85vh;
         height: 100%;
+        padding:15px 0px !important;
       }
       
       /* Set black background color, white text and some padding */
@@ -33,7 +34,7 @@
         .sidenav {
           height: auto;
           min-height: 0;
-          padding: 15px;
+          padding:15px 0px;
         }
         /* .row.content {min-height:auto;}  */
       }
@@ -47,7 +48,7 @@
 
       .main-title{
         color: white;
-        font-size: 8vw;
+        font-size: xx-large;
         margin: auto;
         vertical-align: middle;
         text-shadow: 2px 2px 2px #000000;
