@@ -89,3 +89,7 @@
         min-width: 300px;
         min-height: 315px;
         }
+
+      .ref{
+        word-wrap: break-word;
+      }
