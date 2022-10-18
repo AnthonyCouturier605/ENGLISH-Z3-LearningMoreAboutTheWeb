@@ -88,4 +88,11 @@
         max-width: 560px;
         min-width: 300px;
         min-height: 315px;
-        }
+      }
+      
+      @media screen and (max-width: 767px) {
+      .container-fluid{
+        padding-left: 15px !important;
+        padding-right: 5px !important;
+      }
+    }
