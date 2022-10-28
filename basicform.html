@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Learning more about the web - Basic form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid no-padding">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-logo" href="index.html"><img src="Images/Logo Template.png" alt="Logo" width="50" height="50"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="subjects.html">Subjects</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="background-image">
+  <div class="container mainContainer text-center">    
+    <div class="row content">
+      <div class="">
+          <h1 class="main-title flex-center">Basic form</h1>
+      </div>
+      <div class="intro" style="margin-left: 10px; margin-right:10px;"> 
+        <div>
+            <h2>GET method</h2>
+            <h3>With a link:</h3>
+            <a href="https://englishzp3-learningmoreabouttheweb.glitch.me/basicform.html?name=bob&password=123">https://englishzp3-learningmoreabouttheweb.glitch.me/basicform.html?name=bob&password=123</a>
+            <h3>With a formular:</h3>
+            <form action="" method="GET">
+                <div>
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Name" style="color:black">
+                </div>
+                <div>
+                    <label for="password">Password: </label>
+                    <input type="password" name="password" id="password" placeholder="Password" style="color:black">
+                </div>
+                <button type="submit" style="color:black">Submit</button>
+            </form>
+        </div>
+        <hr>
+        <div>
+            <h2>POST method</h2>
+            <form action="http://167.114.152.54/~knapsak16/test.php" method="POST">
+                <div>
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Name" style="color:black">
+                </div>
+                <div>
+                    <label for="password">Password: </label>
+                    <input type="password" name="password" id="password" placeholder="Password" style="color:black">
+                </div>
+                <button type="submit" style="color:black">Submit</button>
+            </form>
+        </div>
+      </div>
+      </div>
+      <br>
+      <br>
+    </div>
+</div>
+
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Anthony Couturier & Nathanaël Kolodenchuck</p>
+</footer>
+
+</body>
+</html>
