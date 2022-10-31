@@ -95,4 +95,9 @@
         padding-left: 15px !important;
         padding-right: 5px !important;
       }
+
+      .contained-image{
+        max-width: 100%;
+        margin: 0 auto;
+      }
     }

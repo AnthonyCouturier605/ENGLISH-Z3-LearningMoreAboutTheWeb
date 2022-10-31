@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Learning more about the web - URLs</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid no-padding">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-logo" href="index.html"><img src="Images/Logo Template.png" alt="Logo" width="50" height="50"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="subjects.html">Subjects</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid text-center">
+    <div class="row content">
+      <div class="col-sm-2 sidenav" style="min-height: 200vh;">
+        <p><a href="cookies.html">Cookies</a></p>
+        <p><a href="Password.html">Password Security</a></p>
+        <p  class="selected"><a href="urls.html"  class="selected">URLs</a></p>
+      </div>
+      <div class="col-sm-10 no-padding no-margin">
+        <div class="text-left" style="margin-left: 10px; margin-right:10px;">
+          <h1>Deconstructing URLs</h1>
+          <h3>Definition</h3>
+          <p>
+            URL stands for Uniform Resource Locator. It is a sequence of characters, also called a string by programmers, 
+            that represents a resource path. This path is different from your normal computer file path. Let's deconstruct one.
+          </p>
+          <image src="Images/url_deconstruction.png" class="contained-image"/>
+
+          <h3>Protocol</h3>
+          <p>The <i>Hypertext Transfer Protocol</i> (HTTP) is a communication protocol dictating a way to exchange information between a web server and a client. 
+            More often than not, the protocol used on a website is HTTPS. The “S” stands for Secure. This variant encrypts the connection and the information before communicating. 
+            Therefore, it is much more secure. If you need to input personal information such as a credit card number or your address on a website using the HTTP protocol, 
+            beware of this web page. Anyone who intercepts your server-targeted message can easily steal your information. 
+            What’s the best way to keep your personal data private? You should <b>never</b> pay or disclose personally identifiable information on 
+            an insecure website. Keep an eye out for the “S” or the little lock next to the URL.
+          </p>
+          <image src="Images/url_lock.jpg" class="contained-image"/>
+
+          <h3>Domain</h3>
+          <p>
+            A domain name is a sequence of characters identifying a network domain or an <a>IP address</a>. 
+            For instance, "google.com" is a domain name addressed to Google’s network of servers. 
+            In short, a computer searches for the IP address in its <a>cache</a>. 
+            If it doesn’t find it, it asks a DNS server to find the IP address linked to the domain name. 
+            Read the upcoming lesson on DNS servers to understand how computers find servers with domain names.
+          </p>
+
+          <h3>Resource</h3>
+          <p>
+            The resource is the path of the file. For example, the resource “Images/url_deconstruction.png” represents the file
+             “url_deconstruction.png” in the Images folder according to the <a>web root</a> folder. 
+             Therefore, the current page is located in the "urls.html" file in the web root folder. 
+             This structure, "{folder}/{fileName}", is similar to Windows File Explorer, available on personal computers; 
+             however, it is not the only way to identify a resource on the web. 
+          </p>
+          <p>
+            <a>Modal-View-Controller (MVC)</a> has a different pattern: "{controller}/{action}/{id}". 
+            An id is a number identifying a resource, such as a user or a post. An action is a command an online user can execute on the website
+             including deleting a post, editing a post, creating a post, logging in to a website, subscribing, liking a post, etc. 
+             An action can also render a view, more commonly know as a webpage. A controller is an object containing a group of action. 
+             It is responsible for calling the action when the user asks for it. 
+             For instance, if your URL is “domainname.com/Posts/edit/1”, the controller will call the edit action for the first post, 
+             which renders an editing formular.
+          </p>
+
+          <h3>Query String</h3>
+          <p>
+            A query string is a set of parameters found after an interrogation mark in a URL. 
+            Each parameter is separated by an ampersand. Those are sent alongside the request to the server with HTTP. 
+            Then, the server can read the parameters and use them in code. 
+            In the example above, the parameters could be used to sort data in descending order where the name contains “test”.
+          </p>
+
+          <h3>Method</h3>
+          <p>
+            There are different communication methods in the HTTP protocol. The most popular ones are the GET method and the POST method. 
+            GET is more often used to request a resource, so the query string is in the URL. 
+            POST is used to send data to a server and the query string is hidden inside the HTTP request. 
+            A URL is easily modifiable and accessible, so you shouldn’t find important information in a URL’s query string. 
+            If you do find some, it likely means the site is not so secure. Moreover, POST parameters are not kept in a web browser’s history, 
+            which enhances security.
+          </p>
+
+          <h3>Dangers with the GET method and the POST method</h3>
+          <p style="color:red;font-weight: bold;">
+            <iframe src="https://www.youtube.com/embed/BllR_QzxqT4" title="YouTube video player" frameborder="0" allow="encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </p>
+
+          <p>
+            Want to <a href="basicform.html">try it yourself?</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="container-fluid text-center">
+    <p>Anthony Couturier & Nathanaël Kolodenchuck</p>
+  </footer>
+
+</body>
+
+</html>
