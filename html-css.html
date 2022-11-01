@@ -36,12 +36,13 @@
 
   <div class="container-fluid text-center">
     <div class="row content">
-      <div class="col-sm-2 sidenav" style="min-height: 200vh;">
+      <div class="col-sm-2 sidenav" style="min-height: 210vh;">
         <p><a href="cookies.html">Cookies</a></p>
         <p><a href="Password.html">Password Security</a></p>
         <p><a href="WI-FI.html">Wi-Fi</a></p>
         <p ><a href="urls.html">URLs</a></p>
-        <p  class="selected"><a href="html-css.html"  class="selected">HTML and CSS</a></p>
+        <p ><a href="Servers.html">Servers</a></p>
+        <p  class="selected"><a href="html-css.html"  class="selected">Content and Design</a></p>
       </div>
       <div class="col-sm-10 no-padding no-margin">
         <div class="text-left" style="margin-left: 10px; margin-right:10px;">
@@ -49,20 +50,58 @@
           <h2>HTML</h2>
           <p>
             HTML(HyperText Markup Language) is a language used to create web pages. It is used by 94.8%<sup id="fn1"><a href="about.html#ref2" title="See reference">2</a></sup> of all the websites.
-            However, it is not a programming language. It is used to display static elements in a page.
+            However, it is not a programming language. It is used to structure texts and display static elements on a page.            
           </p>
          
-          <hr>
-          <h3>What's a tag?</h3>
+          <h3>DOM (Document Object Model)</h3>
           <p>
-            HTML has a tag system. 
+            DOM is a model representing a document. In the case of an HTML page, it represents all the tags. Programming languages such as  
+            <a href=””>Javascript</a> can access DOM elements in code. The HTML DOM is presented as a tree of objects. 
+            The root is the element at the top of the tree. Every tag is its child. In an HTML page, the root is the HTML tag. 
+            Every tag can have children, and those can have children too. We can see this as a genealogical tree where there is only one parent. 
           </p>
-          <h3>DOM</h3>
+          <image src="https://www.w3schools.com/js/pic_htmltree.gif" class="contained-image" alt="HTML tree"/>
+          <h3>What's a tag</h3>
           <p>
-            
+            Everything in HTML is written using tags. A tag is a semantic element written between angular brackets. 
+            Often, tags have style elements attached to it such as a colour, a background color, a font-size, a width, a height, a font weight, 
+            a font, a font family, etc. Style is used to upgrade a tag’s design and look. “&lthtml&gt” is the root tag, 
+            which means that every other tag is inside it. The most popular tag is one that does absolutely nothing: “&ltdiv&gt”. 
+            It is an empty container with no style. Other tags, such as “&lttable&gt” are quite different. In fact, a table tag will display all 
+            its children in an array-like form. Rows are declared with the “&lttr&gt” tag and cells are declared with the “&lttd&gt”. 
+            Explaining all the HTML tags would probably bore you, so let’s keep it short. Tags can be used to display web forms (“&ltform&gt”), 
+            user inputs (“&ltinput&gt”), lists (“&ltul&gt”), images (“&ltimg&gt”), links (“&lta&gt”), paragraphs (“&ltp&gt”), 
+            titles (“&lth1&gt”, “&lth2&gt”, “&lth3&gt”,…),  and much more.  
           </p>
-          <h2>CSS</h2>
 
+          <h3>What's an attribute?</h3>
+          <p>
+            Tags have <a>attributes</a> such as “href” for a link or “type”,”placeholder” and “value” for an input tag. However, 
+              the primary attribute is “style”. With style, we can add style elements to a tag to change its design. 
+              Without style attributes, web pages would be boring pages with no colour and no organization. 
+              Even a Microsoft Word document would look nicer.  With programming languages such as Javascript, programmers can access and modify 
+              those attributes.
+          </p>
+
+          <hr style="height:1px;border:none;background-color:black">
+          <h2>CSS</h2>
+          <p>
+            Since 1997, HTML style attributes are deprecated. Experts recommend using the CSS language. CSS (Cascading Style Sheets) is a language used to give style attributes to HTML tags. Using a .css file separates the content from the design of a web page.  
+Instead of hiding a style attribute to HTML tags, we can declare are their style properties such as the colour of the text, the colour of the background or the size of the font in a separate file. Those properties are applied to the selector declared before the brackets.
+
+          </p>
+
+          <h3>Selectors</h3>
+          <p>
+            A selector can be the name of a tag, its class, or its ID. Classes attributes aren’t unique, but there can only be one tag with a specific ID, and tags can only have one ID. Adding “:hover” at the end of a selector means that the style will only be applied when the cursor is on the element. Many more selectors exist allowing you to choose specific elements but enumerating them would be impertinent. 
+            CSS can also be used to create simple animations.            
+          </p>
+          <image src="Images/selector.png" class="contained-image" alt="selector"/>
+          <hr style="height:1px;border:none;background-color:black">
+          <h2>How is it dangerous?</h2>
+          <p>
+            It might be more difficult to identify the risks since HTML and CSS are not dynamically interacting with your computer and your data. However, this doesn’t mean it can’t affect you. Manipulating HTML can lead to misinformation. With a simple right click, anyone can inspect and modify the HTML code of a web page. Of course, this will only change the content on their screen, but sharing a screenshot can misinform people on a website’s content. Watch out for malicious screenshots presenting temporarily modified “tweets” and news. Before taking this information for granted, visit the website in question to confirm the validity of the screenshot.         
+          </p>
         </div>
       </div>
     </div>
