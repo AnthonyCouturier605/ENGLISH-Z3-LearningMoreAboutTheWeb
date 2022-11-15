@@ -36,7 +36,7 @@
 
   <div class="container-fluid text-center">
     <div class="row content">
-      <div class="col-sm-2 sidenav" style="min-height: 155vh;">
+      <div class="col-sm-2 sidenav" style="min-height: 182vh;">
         <p><a href="cookies.html">Cookies</a></p>
         <p><a href="Password.html">Password Security</a></p>
         <p><a href="WI-FI.html">Wi-Fi</a></p>
@@ -57,7 +57,7 @@
             How computers exchange data on a network
           </h3>
           <p>
-            Large messages cannot be sent in one request since it would slow down the entire network. Therefore, this kind of data is segmented into <a href="glossary.html#glos-packets">packets</a>. Sending a huge file in one go would be problematic. In fact, if the message doesn’t reach the destination, we would have to send the entire file again. Moreover, this is unproductive since a huge file could monopolize the <a>bandwidth</a>. While a packet is being transmitted in a cable, other packets can’t be transmitted. A big packet would use the cable for a enormous amount of time. 
+            Large messages cannot be sent in one request since it would slow down the entire network. Therefore, this kind of data is segmented into <a href="glossary.html#glos-packets">packets</a>. Sending a huge file in one go would be problematic. In fact, if the message doesn’t reach the destination, we would have to send the entire file again. Moreover, this is unproductive since a huge file could monopolize the <a href="glossary.html#glos-bandwidth">bandwidth</a>. While a packet is being transmitted in a cable, other packets can’t be transmitted. A big packet would use the cable for a enormous amount of time. 
           </p>
           <p>
             With multiple packets, the message is sent in independent segments. Those pieces of data can take different routes to reach their destination. Therefore, it doesn’t fully utilize the networks capacity, and lost packets can easily be resent without returning the entirety of the data. 
@@ -66,12 +66,19 @@
             Moreover, a computer cannot receive a huge file in one piece. This is another reason why the data is divided into packets.  Computers receive those packets and pieces them together to obtain the file requested.
           </p>
 
-          <image src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/IPv4_Packet-en.svg/1200px-IPv4_Packet-en.svg.png" class="contained-image" alt="selector"></image>
+          <image src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/IPv4_Packet-en.svg/1200px-IPv4_Packet-en.svg.png" class="contained-image smaller-image" alt="selector"></image>
           <a href="glossary.html#ref6" title="See reference">6</a></sup>
           <h3>How does your computer reassemble messages?</h3>
           <p>
             The body of the packet is called the payload, whereas the header is a label providing valuable information such as the order of the packet, its origin, and its destination. For instance, IP packets are used with the IP protocol. Its header contains the <a href="glossary.html#glos-ip">IP address</a> of the origin and its destination. Without headers, your computer can’t reassemble packets since it wouldn’t know where it came from and the order of the message.
           </p>
+
+          <h3>Demonstration</h3>
+          <p>
+            If I send a message to Google’s server, we can see it’s fragmented in multiple packets. The “ping” command sends four packets to a server and waits for four responses.
+          </p>
+          <image src="Images/ping.png" class="contained-image smaller-image"/>
+
 
           <h3>Safe downloads</h3>
           <p>
